@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {  Widget,  addResponseMessage, renderCustomComponent, addLinkSnippet } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
-import logo from "../../Images/avatar.jpeg";
+import logo from "d:/shopping-assistant/services/web-app/src/Images/chat-bot.jpg";
 import serverUrl from "../../Constants/serverUrl";
 import ProductCard from "./ProductCard";
 import SummaryCard from "./SummaryCard";
@@ -20,7 +20,7 @@ class Chat extends Component {
   }
 
   componentDidMount() {
-    addResponseMessage('Hope you are fine. Feel free to ask me anything related to any product. I will try my best to help you out.');    
+    addResponseMessage("Hey there! I'm  Quanta, your friendly digital assistant. I'm here to help make things easier and more fun. What can I do for you today? 😊");    
   }
 
   handleNewUserMessage = newMessage => {

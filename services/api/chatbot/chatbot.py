@@ -26,8 +26,8 @@ nltk.download('wordnet')
 nltk.download('nps_chat')
 
 # Global Constants
-GREETING_INPUTS    = ("hello", "hi","wassup", "hey","holla", "hello","namaste","namastey")
-GREETING_RESPONSES = ["hi, how may I help you?", "hey, feel free to ask me anything about any product.", "hi there, I will be happy to help you"]
+GREETING_INPUTS    = ("hello", "hi","wassup", "hey","holla","namaste","namastey","vanakkam","Salve","bonjour","guten tag","salam","hallo","merhaba","namaskara","subhasaya")
+GREETING_RESPONSES = ["Hi, how may I help you?", "Hey, feel free to ask me anything about any product.", "Hi there, I will be happy to help you"]
 
 # Global Variables
 lem = nltk.stem.WordNetLemmatizer()

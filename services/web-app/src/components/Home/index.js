@@ -8,14 +8,14 @@ import SpeakerNotesIcon from '@material-ui/icons/SpeakerNotes';
 import ReplayIcon from '@material-ui/icons/Replay';
 
 function Home(props) {
-  return <div style={{justifyContent:'center',textAlign: 'center',  backgroundImage:`url('/shopping.jpg')`,minHeight: '100vh'}}>
+  return <div style={{justifyContent:'center',textAlign: 'center',  backgroundImage:`url('pixelcut-export.jpg')`,minHeight: '100vh'}}>
 <br/>
 <Typography variant="h4" component="h2" style={{color: 'white'}}>
   Shopping Assistant
 </Typography>
 <br/>
 <Typography variant="h6" component="h2" style={{color: 'white'}}>
-  by Team Salesperson
+  by TECH TITANZ
 </Typography>
 <br/><br/><br/><br/><br/>
 <Typography variant="h5" component="h2" style={{color: 'white'}}>
@@ -31,14 +31,14 @@ function Home(props) {
   />
   </Grid>
   <Grid item>
-  <FeatureCard
+  <FeatureCard 
     title="Virtual trial room"
     description="Allows you to virtually try on various clothes, sunglasses, etc. and check how they look on you."
     icon={<ReplayIcon fontSize="large"/>}
   />  
   </Grid>
   <Grid item>
-  <FeatureCard
+  <FeatureCard 
     title="Summarized reviews"
     description="Prevents you from doing the tedious job of going through numerous reviews of a product."
     icon={<SpeakerNotesIcon fontSize="large"/>}

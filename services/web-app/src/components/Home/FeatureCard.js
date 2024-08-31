@@ -8,11 +8,6 @@ const useStyles = makeStyles({
   root: {
     width: '250px',
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
     fontSize: 14,
   },
@@ -22,20 +17,27 @@ const useStyles = makeStyles({
 });
 
 function FeatureCard(props) {
-  const classes = useStyles();  
-  const {title, description, icon} = props
-  return   <Card className={classes.root} style={{backgroundColor: "#f5f5f5"}}>
+  const classes = useStyles();
+  const { title, description, icon } = props;
+
+  // Apply white color to the icon
+  const iconWithStyle = React.cloneElement(icon, { style: { fontSize: 'xx-large', color: 'white' } });
+
+  return (
+    <Card className={classes.root} style={{ backgroundColor: "#1d1024" }}>
       <CardContent>
-          {icon}
-          <br/>
-        <Typography variant="h6" component="h2">
-       &nbsp;&nbsp; {title}
+        {/* Use the iconWithStyle here */}
+        {iconWithStyle}
+        <br />
+        <Typography variant="h6" component="h2" style={{ color: 'white' }}>
+          &nbsp;&nbsp; {title}
         </Typography>
-        <Typography variant="body2" component="p">
-        {description}
+        <Typography variant="body2" component="p" style={{ color: 'white' }}>
+          {description}
         </Typography>
       </CardContent>
-    </Card>    
+    </Card>
+  );
 }
 
 export default FeatureCard;

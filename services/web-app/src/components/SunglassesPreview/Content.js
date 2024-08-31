@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import ControlCameraIcon from '@material-ui/icons/ControlCamera';
 import { JEELIZVTOWIDGET } from 'jeelizvtowidget'
 import Button from '@material-ui/core/Button';
-import searchImage from '../../Images/avatar.jpeg'
+import searchImage from '../../Images/chat-bot.jpg'
 import MuiAlert from '@material-ui/lab/Alert';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
